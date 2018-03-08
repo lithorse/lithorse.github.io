@@ -1,0 +1,59 @@
+.headline{
+    position: relative;
+    height: 130px;
+    color: honeydew;
+    background-color: rgb(1, 95, 189);
+    font-family:Verdana;
+}
+.headline h1{
+    position: relative;
+    padding:8px 16px;
+}
+.leftSidebar{
+    height: 100%;
+    width: 200px;
+    position: fixed !important;
+    overflow: auto;
+    background-color: rgb(255, 255, 255);
+    z-index: 1;
+    animation:animateleft 0.4s}@keyframes animateleft{from{left:-300px;opacity:1} to{left:0;opacity:1}
+
+}
+.leftSidebar a{
+    display: list-item;
+    padding:8px 16px;
+    text-decoration:none;
+    color:inherit;
+    font-family:Verdana;
+}
+.leftSidebar a:hover{
+    background-color: rgb(206, 206, 206);
+}
+button:hover{
+    box-shadow:0 8px 16px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+    background-color: rgb(206, 206, 206);
+    color:black;
+}
+button{
+    border:none;
+    display:inline-block;
+    padding:8px 16px;
+    vertical-align:middle;
+    overflow:hidden;
+    text-decoration:none;
+    color:inherit;
+    background-color:inherit;
+    text-align:center;
+    cursor:pointer;
+    white-space:nowrap;
+    font-size: 1.5em;
+    font-family:Verdana;
+}
+
+.rightSidebar{
+    height: 100%;
+    width: 20%;
+    right: 80%;
+    position: fixed;
+    background-color: gainsboro;
+}

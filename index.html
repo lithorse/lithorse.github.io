@@ -1,62 +1,32 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
+
 <head>
-	<meta charset="utf-8">
-    <title>Page title</title>
-	<style>
-		p
-		{
-  			border: 2px solid black;
-		}
-	</style>
+  <meta charset="utf-8">
+  <title>Webblab 2 - Javascript</title>
+  <link rel="stylesheet" type="text/css" href="lab2style.css">
 </head>
 
 <body>
-	<h1>Hello</h1>
-	<a href="https://validator.w3.org/">Link</a>
-	<h2>OK</h2>
-	<p>lasdkfjlaskdfjfjkdjfklsjflksdjf <em>kdsjfjsdk</em> f <strong>kjsdf</strong> kds flskd f dskfj</p>
-	asdasdsad</br>
-	asdasd<hr>
-	asdasd</br>
-	
-	<ol type="I">
-  		<li>Coffee</li>
-  		<li style="background-color:#192eb5">Tea</li>
-  		<li style="background-color:#FFFFFF">Milk</li>
-	</ol> 
-	
-	<table>
-    	<tr>
-        	<td style = "border:2px solid red;"> cell 1 </td>
-        	<td style = "border:2px solid red;"> cell 2 </td>
-			<td style = "border:2px solid red;"> cell 3 </td>
-			<td style = "border:2px solid red;"> cell 4 </td>
-    	</tr>
-		<tr>
-        	<td style = "border:2px solid red;"> cell 1 </td>
-        	<td style = "border:2px;"> cell 2 </td>
-			<td style = "border:2px solid black;"> cell 3 </td>
-			<td style = "border:2px solid red;"> cell 4 </td>
-    	</tr>
-		<tr>
-        	<td style = "border:2px solid red;"> cell 1 </td>
-        	<td style = "border:2px solid black;"> cell 2 </td>
-			<td style = "border:2px solid black;"> cell 3 </td>
-			<td style = "border:2px solid red;"> cell 4 </td>
-    	</tr>
-		<tr>
-        	<td style = "border:2px solid red;"> cell 1 </td>
-        	<td style = "border:2px solid red;"> cell 2 </td>
-			<td style = "border:2px solid red;"> cell 3 </td>
-			<td style = "border:2px solid red;"> cell 4 </td>
-    	</tr>
-	</table>
-	
-	<span style="color:green; background-color:black; font-weight:bold; font-size:3em;">Thro' the ghoul-guarded gateways of slumber</span></br>
-	<span style="font-size:45px">Past the wan-moon'd abysses of night</span></br>
-	<span style ="font-size:13mm">I have liv'd o'er lives without number</span>
-	<div>I have sounded all things with my sight</div>
-	<img src="https://i.imgur.com/4Ub1iVT.jpg"></img>
-	</body>
+  <div class="wrapper">
+    <div class="dark-gray aside">
+      <div class="header">Menu</div>
+      <button onclick="fetchData(10);">📚 - Fetch Books</button>
+      <button onclick="addDataSetup();">📕 - Add Book</button>
+      <button onclick="modifyDataSetup();">🔧 - Modify Book</button>
+      <button onclick="deleteDataSetup();">🗑️ - Delete Book</button>
+      <button onclick="getNewKey();">🔑 - Get New Key</button>
+      <input id="searchInput" oninput="searchArray();" onfocus="this.value=''" type="text" value="Search Title">
+      <div>
+        <div id="searchResult"></div>
+      </div>
+    </div>
+    <header>
+      <div class="header">Books!</div>
+    </header>
+    <div id="demo" class="main">Pick an option!</div>
+  </div>
+  <script src="lab2script.js"></script>
+</body>
+
 </html>
